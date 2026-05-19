@@ -1,0 +1,33 @@
+# =============================================================================
+#  requirements.txt  —  SmartTask Pro Dependencies
+#  Install: pip install -r requirements.txt
+#
+#  All packages are tested for Python 3.13 / 3.14 compatibility.
+#  Pinned to specific minor versions for reproducibility.
+# =============================================================================
+
+# ── Web Framework ─────────────────────────────────────────────────────────────
+Flask==3.1.0
+# Flask is the lightweight WSGI web framework that powers our REST API.
+# 3.x supports Python 3.13+ natively.
+
+# ── Database ORM ──────────────────────────────────────────────────────────────
+Flask-SQLAlchemy==3.1.1
+# Object-Relational Mapper — maps Python classes to SQLite database tables.
+# Lets us write Python instead of raw SQL.
+
+# ── Background Scheduling ─────────────────────────────────────────────────────
+APScheduler==3.10.4
+# Advanced Python Scheduler — runs reminder jobs in background threads.
+# 'date' trigger fires a job exactly once at a scheduled datetime.
+
+# ── NLP Date Parsing ──────────────────────────────────────────────────────────
+dateparser==1.2.0
+# Multilingual natural language date parser.
+# Converts "by Friday 5pm" or "in 3 days" to a Python datetime object.
+# Supports 200+ languages and many date/time formats.
+
+# ── Internal to Flask / already installed ─────────────────────────────────────
+# Werkzeug (WSGI toolkit) — installed automatically with Flask
+# Jinja2 (template engine) — installed automatically with Flask
+# SQLAlchemy (core ORM)  — installed automatically with Flask-SQLAlchemy
