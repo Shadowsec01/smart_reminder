@@ -31,3 +31,5 @@ dateparser==1.2.0
 # Werkzeug (WSGI toolkit) — installed automatically with Flask
 # Jinja2 (template engine) — installed automatically with Flask
 # SQLAlchemy (core ORM)  — installed automatically with Flask-SQLAlchemy
+
+gunicorn>=22.0.0
